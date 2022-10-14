@@ -18,7 +18,7 @@ public class PrimoFor {
        
        // Variaveis
        
-       String perg  = "Inorme o numero? "; // pergunta feita para o usuario 
+       String perg  = "Informe o numero? "; // pergunta feita para o usuario 
        String da = "O numero informado pelo usuario é: ";
        String pri = "É primo";
        String npri = "Não é primo";        
