@@ -17,17 +17,25 @@ public class MultiplicacaoFor {
         Scanner in = new Scanner(System.in);
         //variaveis 
         
+        String da = "Com base no número inserido pelo usuario: ";
         String perg = "Qual o valor do mumero ";
         String result = "O valor da multiplicação é ";
-        int[] num = new int[2] ;
-        int total = 0;
+        String ini = "Esse progrma é para calcular a multiplicação de dois números.";
+        String intro = "Insira os numeros para efetuar a multiplicação:";
+        double[] num = new double[2] ;
+        double total = 0;
         int sinais =0;
+        
+        //inicio do progrma.
+        
+        System.out.println(ini);
+        System.out.println(intro);
          
         // Pergunta ao usuario.
         
         for(int i=0;i<num.length;i++){
             System.out.println(perg + (i+1) + "?");
-            num[i] =in.nextInt();
+            num[i] =in.nextDouble();
         }
         
         // Conversão de sinais.
@@ -53,6 +61,7 @@ public class MultiplicacaoFor {
         
         // Resposta 
         
+        System.out.println(da);
         System.out.println(result + total);
         
     }
