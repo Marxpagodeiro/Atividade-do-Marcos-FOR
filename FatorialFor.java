@@ -15,11 +15,20 @@ public class FatorialFor {
 
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
+        
         // variaveis 
-        String da = "Com base no número inserido pelo usuario: ";
+        
+        String intro = "Esse progrma é para calcular a fatorial de um número.";//uma indrodução para o programa
+        String da = "Com base no número inserido pelo usuario: "; // apenas uma indrodução apara a resposta.
         String perg  = "Insira um número para descobrir seu respectivo Fatorial:"; // pergunta feita para o usuario.
-        int num = 0;
-        int fat = 1; //fatorial x! = x*x-1 ate x ser = 1.
+        String cal = ""; //  string para mostrar o calculo da fatorial sendo seito na mão.
+        int num = 0; // numero que vc vai perguntar ao usuario.
+        int fat = 1; // fatorial x! = x*x-1 ate x ser = 1.
+        int i =0;// contador para o for.
+        
+        // introdução ao programa.
+        
+        System.out.println(intro);
         
         //Pergunta feita ao usuario.
        
@@ -28,12 +37,11 @@ public class FatorialFor {
         
         //calculo da fatorial.
         
-        for(int i = 1;i <= num; i++){
+        for(i = num;i > 1; i--){
                 fat = fat * i;
-                System.out.println(fat);
-                System.out.println(i);
- 
+                cal += i + " x " ;// declaração da String que mostra o calculo da fatorial como seria feito na mão.
         }
+        cal += i;// usado somente para adicionar o 1 no final da String de cima 
         /*
         como fazer o calculo da fatorial.
         sabendo que 0! = 1 e 1! = 1. considemaros a variavel fatorial ja igual a 1 para qualquer numero pedido menor ou igual a 1 ser 1 o resultado.
@@ -55,6 +63,7 @@ public class FatorialFor {
         // Resposta
         
         System.out.println(da);
-        System.out.println(num + "!" + " = " + fat);
+        System.out.println(num + "!" + " = " + cal + " = " + fat);
+        
     }
 }
