@@ -20,10 +20,17 @@ public class PrimoFor {
        
        String perg  = "Informe o numero? "; // pergunta feita para o usuario 
        String da = "O numero informado pelo usuario é: ";
+       String ini = "Esse progrma é para descobrir se um número é primo.";
+       String intro = "Insira o número para descobrir se ele é primo:";
        String pri = "É primo";
        String npri = "Não é primo";        
        int num = 0;
        int cont = 0;
+       
+       //introdução
+       
+        System.out.println(ini);
+        System.out.println(intro);
        
        //Pergunta feita ao usuario.
        
