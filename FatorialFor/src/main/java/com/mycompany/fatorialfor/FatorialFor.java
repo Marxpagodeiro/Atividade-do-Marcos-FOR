@@ -23,7 +23,7 @@ public class FatorialFor {
         String perg  = "Insira um número para descobrir seu respectivo Fatorial:"; // pergunta feita para o usuario.
         String cal = ""; //  string para mostrar o calculo da fatorial sendo seito na mão.
         int num = 0; // numero que vc vai perguntar ao usuario.
-        int fat = 1; // fatorial x! = x*x-1 ate x ser = 1.
+        long fat = 1; // fatorial x! = x*x-1 ate x ser = 1.
         int i =0;// contador para o for.
         
         // introdução ao programa.
