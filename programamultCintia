@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author Bruno
  */
-public class Mavenproject4 {
+public class programamultCintia {
 
     public static void main(String[] args) {
         Scanner in = new Scanner (System.in);
