@@ -1,0 +1,42 @@
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
+ */
+
+package com.mycompany.mavenproject4;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Bruno
+ */
+public class Mavenproject4 {
+
+    public static void main(String[] args) {
+        Scanner in = new Scanner (System.in);
+        //Variaveis 
+        double [ ] num= new double[2];
+        double total = 0;
+        int i =0;
+        //Pergunta ao usuario 
+        for(i =0;i<num.length;i++){
+            System.out.println("Digite o primeiro numero:" );
+            num[i] = in.nextDouble();
+        }
+        //Calculo de multiplicação
+        for (i= 0; i < num[1]; i ++){
+            total = num[0] + total;
+        }
+        //Conversão de sinal
+        if(num[0]<0){
+            num[0] = 0-num[0];
+        }
+        if(num[1]<0){
+            num[1] = 0 - num[1];
+        }
+        //Resultado 
+        System.out.println("O total é:" + total );
+    }
+}
+
