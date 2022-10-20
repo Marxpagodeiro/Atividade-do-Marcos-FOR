@@ -31,16 +31,17 @@ public class TrianguloFor {
         int pos=0;
         double total=0;
         double aux= 0;
+        int i = 0;
         
         // Pergunta ao usuario.
         
-        for(int i=0;i<lados.length;i++){
+        for(i=0;i<lados.length;i++){
             System.out.println(lado + (i+1));
             lados[i] =in.nextDouble();
         }
         // Calculo para descobrir qual é o valor maior.
          
-        for(int i=1;i<lados.length;i++){
+        for(i=1;i<lados.length;i++){
             if(lados[i]>lados[pos]){
                 pos=i;
             }
@@ -48,7 +49,7 @@ public class TrianguloFor {
         
         // Calculo para descobrir a soma dos dois lados menores.
         
-        for(int i=0;i<lados.length;i++){
+        for(i=0;i<lados.length;i++){
             if(i!=pos){
                 total=total+lados[i];
             }
